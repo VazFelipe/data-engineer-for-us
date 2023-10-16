@@ -4,7 +4,6 @@
   - [What is this all about?](#what-is-this-all-about)
   - [Repository Structure](#repository-structure)
 
-
 ## What is this all about?
 
 - Hi, I am **Felipe Vaz**, a Data Engineer that starts a carrer in data analysis in 2010. In that age I realize that I am a person who is **experienced in interviewing, capturing and translating** business requirements into data ideas and solutions. 
