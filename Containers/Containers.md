@@ -1,5 +1,4 @@
 # Contents
-
 - [Contents](#contents)
 - [References](#references)
   - [The Growth of Linux](#the-growth-of-linux)
@@ -8,11 +7,15 @@
 - [Containerization](#containerization)
   - [Simple Docker's Architecture (Client-Server) Schema](#simple-dockers-architecture-client-server-schema)
 
+[Get back to the index](/README.md)
+
 # References
 
 - [Linode >> A Brief Intro About Linux History](https://youtu.be/f473gO3STUs?si=kNQOmhmBUJLO5x2A)
 - [LINUXtips >> Containerization](https://youtu.be/MeFyp4VnNx0?si=QnlhbEbz2eWvWaqR)
 - [Docker >> Simple Docker's Architecture](https://docs.docker.com/get-started/overview/#docker-architecture)
+
+[Get back to the index](/README.md)
 
 ## The Growth of Linux 
 - **Old but Gold >> 1920s–1930s:** From telephones to telecommunications Nokia Bell Labs was the consolidation of several departments within the American Telephone & Telegraph company (AT&T) (https://www.bell-labs.com/about/history/#gref). 
@@ -24,6 +27,8 @@
 - During the 1980s UNIX started diverging in many ways, varying a lot on its versions, and **many companies started selling computers with different variants of UNIX**.
 - In 1991 a man called **Linus Torvalds was unhappy with MS-DOS and MINIX** and developed its onw UNIX GNU licensed version named LINUX.
 
+[Get back to the index](/README.md)
+
 ## The Linux Philosophy
 - **In summary**, the connection to the birth of Linux is Bell Labs **>>** Multics **>>** QWERTY keyboards **>>** the decision for it to be an open source.
 - Keep in mind that Linux was not necessarily created with the open source philosophy in mind, because the GPL license that officially made **Linux Open Source was implemented until version 0.12**.
@@ -32,9 +37,13 @@
 - But who controls Linux in terms of license? ICANN (Internet Corporation for Assigned Names And Numbers) coordinates the URL as unique identifiers for accessing web content around the globe, and the disputes for **licensing ownership created a lot of problems**, for example brazil started creating their own linux distros in which they could control and develop then they created a dizzying array of sister projects that are essentially language adapted distros and tools that are relevant to their country of origin. 
 - In the age of 2004 **it became a need to make a user-friendly version of a Linux Distro**, much of this because the philosophy of linux and maturity of the project itself that could be runned on the server side and now Linux was not easy to work for an average user.
 
+[Get back to the index](/README.md)
+
 ## The Containerization of Linux
 - Linux **need to be ready to the desktop and for both all and new computers too**. The Canonical Ubuntu is the choosen distro for the community. The market was competing and divided among several platforms and Ubuntu aimed to solve that problem. For example, LindowsOS (Linspire >> FreeSpire) was interoperable with Windows DLLs and then you could run Windows applications on top of Ubuntu.
 - **Interoperability and Community was growing and in the age of 2018 the container timeline starts for Linux**, a way to ensure that a piece of software and its dependencies are packaged together so that can run anywhere (Docker, Vangrant and Kubernetes K<8>s), like in toasters, cars, siloed containers...
+
+[Get back to the index](/README.md)
 
 # Containerization
 ## Simple Docker's Architecture (Client-Server) Schema
@@ -45,3 +54,5 @@
 - **Docker's Client** talks to the **Docker's Host** (Docker Daemon) using its **REST API**. After this call, the host build, run and distribute your Docker containers to the **Docker's Registry**.
 ****
 - Docker was the first container runtime, but now the container runtime is containerd. Containerd separates from Docker in 2016 to support other container systems like Kubernetes, Fargate and Rancher.
+
+[Get back to the index](/README.md)
