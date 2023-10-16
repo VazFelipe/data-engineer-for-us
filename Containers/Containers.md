@@ -1,6 +1,6 @@
 # Contents
 - [Contents](#contents)
-- [References](#references)
+- [Links to the Authors That I have learned from](#links-to-the-authors-that-i-have-learned-from)
   - [The Growth of Linux](#the-growth-of-linux)
   - [The Linux Philosophy](#the-linux-philosophy)
   - [The Containerization of Linux](#the-containerization-of-linux)
@@ -9,7 +9,7 @@
 
 [Get back to the index](/README.md)
 
-# References
+# Links to the Authors That I have learned from
 
 - [Linode >> A Brief Intro About Linux History](https://youtu.be/f473gO3STUs?si=kNQOmhmBUJLO5x2A)
 - [LINUXtips >> Containerization](https://youtu.be/MeFyp4VnNx0?si=QnlhbEbz2eWvWaqR)
