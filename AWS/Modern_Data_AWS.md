@@ -111,7 +111,7 @@
 
 ### AWS Lake Formation - acesso
 
-- [Lake Formation Workshop]()
+- [Lake Formation Workshop - usar opção Send OTP](https://catalog.us-east-1.prod.workshops.aws/join?access-code=3439-0245bd-1b)
 
 ![9](/AWS/images/9.png)
 
