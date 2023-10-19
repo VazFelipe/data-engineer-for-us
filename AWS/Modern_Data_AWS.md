@@ -26,18 +26,18 @@
 
 # O porquê de uma arquitetura moderna
 
-![1](/aws/images/1.png)
+![1](/AWS/images/1.png)
 
 [Uma documentação interessante sobre as diferenças entre os modelos de desenvolvimento aqui.](https://aws.amazon.com/pt/compare/the-difference-between-a-data-warehouse-data-lake-and-data-mart/)
 
 # Uma visão da arquitetura moderna na AWS
-![3](/aws/images/3.png)
+![3](/AWS/images/3.png)
 
 [Uma documentação na AWS sobre a arquitetura moderna aqui.](https://aws.amazon.com/pt/big-data/datalakes-and-analytics/modern-data-architecture/)
 
 # Princípios
 
-![4](/aws/images/4.png)
+![4](/AWS/images/4.png)
 
 - **Data Lake Escalável**: repositório centralizado que armazena todas as estruturas de dados
 - **Serviços de propósito específico**: modelo democrático que contempla diferentes perfis e acessos ao dado
@@ -49,7 +49,7 @@
 
 # Arquetura Moderna na Prática
 
-![5](/aws/images/5.png)
+![5](/AWS/images/5.png)
 
 - Nomenclaturas importantes na plataforma AWS:
   - **Camada de entrada**: dados brutos
@@ -58,36 +58,36 @@
 
 ## Data Lakes Escaláveis - um caminho comum
 
-![6](/aws/images/6.png)
+![6](/AWS/images/6.png)
 
 ### Amazon S3 - armazenamento
 
-![7](/aws/images/7.png)
+![7](/AWS/images/7.png)
 
 ### AWS Glue Catalog - integração
 
-![23](/aws/images/23.png)
+![23](/AWS/images/23.png)
 
-![8](/aws/images/8.png)
+![8](/AWS/images/8.png)
 
 ### AWS Lake Formation - acesso
 
 - [Lake Formation Workshop]()
 
-![9](/aws/images/9.png)
+![9](/AWS/images/9.png)
 
 - Nomenclaturas importantes na plataforma AWS:
   - **Principal**: quem usa, exemplos de principals abaixo
 
-![10](/aws/images/10.png)
+![10](/AWS/images/10.png)
 
 - Permissões efetivas são aquelas que combinam métodos em databases, tabelas, colunas ou filtros e as tags
 
-![11](/aws/images/11.png)
+![11](/AWS/images/11.png)
 
 ### Querying the Data Lake - acesso
 
-![12](/aws/images/12.png)
+![12](/AWS/images/12.png)
 
 - Acessa Delta, Iceberg e Hudi
 - Custo no Athena: organizar o dado para obter a melhor relação
@@ -97,64 +97,64 @@
 
 ### Movimentação de dados
 
-![13](/aws/images/13.png)
+![13](/AWS/images/13.png)
 
 - **Inside Out**: dados gerados de dentro do Data Lake para fora do ambiente
 - **Outside In**: dado de fora do ambiente para dentro do Data Lake, como dos logs para o centro do Data Lake
 - **Around the perimeter**: um exemplo é aquelas geradas por um modelo de Machine Learning que vai abastecer o perímetro ao redor do Data Lake
 
-![14](/aws/images/14.png)
+![14](/AWS/images/14.png)
 
 - Exemplos de **padrões para movimentação** de dados
 
-![14](/aws/images/15.png)
+![14](/AWS/images/15.png)
 
 #### AWS DMS Database Migration Service
 
-![16](/aws/images/16.png)
+![16](/AWS/images/16.png)
 
 - Replica
 - Distribui (Fan Out)
 
-![17](/aws/images/17.png)
+![17](/AWS/images/17.png)
 
 #### AWS Amazon Kinesis
 
 - Decisões importantes a considerar
 
-![24](/aws/images/24.png)
+![24](/AWS/images/24.png)
 
 - Permite MongoDb, DMS não.
 
-![18](/aws/images/18.png)
+![18](/AWS/images/18.png)
 
 - Senders e Consumers
 
-![19](/aws/images/19.png)
+![19](/AWS/images/19.png)
 
 - Diferenças entre Kinesis e MSK
 
-![22](/aws/images/22.png)
+![22](/AWS/images/22.png)
 
 #### AWS AppFlow Integration for Third-Party Apps (No code)
 
-![20](/aws/images/20.png)
+![20](/AWS/images/20.png)
 
-![21](/aws/images/21.png)
+![21](/AWS/images/21.png)
 
 ### AWS Simple Schema
 
-![25](/aws/images/25.png)
+![25](/AWS/images/25.png)
 
 ### Redshift
 
-![26](/aws/images/26.png)
+![26](/AWS/images/26.png)
 
 ### AWS ML Stack
 
-![27](/aws/images/27.png)
+![27](/AWS/images/27.png)
 
 ### AWS Analytics
 
-![28](/aws/images/29.png)
+![28](/AWS/images/29.png)
 
