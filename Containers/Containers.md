@@ -10,10 +10,10 @@
     - [What is a Container?](#what-is-a-container)
     - [What is the difference between Virtual Machines and Containers?](#what-is-the-difference-between-virtual-machines-and-containers)
     - [What is Docker?](#what-is-docker)
-    - [What is a Docker Image?](#what-is-a-docker-image)
+    - [What is a Docker image?](#what-is-a-docker-image)
     - [Installing Docker on your computer](#installing-docker-on-your-computer)
     - [Docker commands](#docker-commands)
-    - [Build a Docker image](#build-a-docker-image)
+    - [Building a Docker image](#building-a-docker-image)
 
 [Get back to the index](/README.md)
 
@@ -84,7 +84,7 @@
 
 - There is a book explaining way better than me, click [here](https://livro.descomplicandodocker.com.br/chapters/chapter_00.html).
 
-### What is a Docker Image?
+### What is a Docker image?
 
 - A Docker Image is a stopped container. We develop in our side what we judge essential to the application run healthy and in the Docker image it will be encapsulated.
 
@@ -130,7 +130,7 @@
 
 [Watch this nice explanation about the getting-started application with LINUXtips](https://youtu.be/MeFyp4VnNx0?t=2129)
 
-### Build a Docker image
+### Building a Docker image
 
 - You will need to generate a Dockerfile, that is a file with no extension that contains Docker instructions to build your Docker image, like this:
     - **FROM**: choose the base image (not the SO/Kernel)
