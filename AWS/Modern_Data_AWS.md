@@ -31,7 +31,7 @@
 
 # Link para o workshop - disponível por 72 horas a partir do dia 19/10/2023
 
-![Workshop - escolha opção Send OTP](https://catalog.us-east-1.prod.workshops.aws/join?access-code=3439-0245bd-1b)
+[Workshop - escolha opção Send OTP](https://catalog.us-east-1.prod.workshops.aws/join?access-code=3439-0245bd-1b)
 
 # O porquê de uma arquitetura moderna
 
