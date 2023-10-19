@@ -2,6 +2,7 @@
 
 - [Contents](#contents)
 - [Contato do palestrante: AWS Modern Data Architectures](#contato-do-palestrante-aws-modern-data-architectures)
+- [Link para o workshop - disponível por 72 horas a partir do dia 19/10/2023](#link-para-o-workshop---disponível-por-72-horas-a-partir-do-dia-19102023)
 - [O porquê de uma arquitetura moderna](#o-porquê-de-uma-arquitetura-moderna)
 - [Uma visão da arquitetura moderna na AWS](#uma-visão-da-arquitetura-moderna-na-aws)
 - [Princípios](#princípios)
@@ -27,6 +28,10 @@
 [Get back to the main repo](/README.md)
 
 [Get back to this contents](#contents)
+
+# Link para o workshop - disponível por 72 horas a partir do dia 19/10/2023
+
+![Workshop - escolha opção Send OTP](https://catalog.us-east-1.prod.workshops.aws/join?access-code=3439-0245bd-1b)
 
 # O porquê de uma arquitetura moderna
 
@@ -111,7 +116,7 @@
 
 ### AWS Lake Formation - acesso
 
-- [Lake Formation Workshop - usar opção Send OTP](https://catalog.us-east-1.prod.workshops.aws/join?access-code=3439-0245bd-1b)
+- [Lake Formation Workshop - aguardando link]()
 
 ![9](/AWS/images/9.png)
 
