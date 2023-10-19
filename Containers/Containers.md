@@ -15,7 +15,7 @@
     - [Docker commands](#docker-commands)
     - [Building a Docker image](#building-a-docker-image)
 
-[Get back to the index](/README.md)
+[Get back to the main repo](/README.md)
 
 ## Links to the Authors That I have learned from
 
@@ -23,7 +23,9 @@
 - [LINUXtips >> Containerization](https://youtu.be/MeFyp4VnNx0?si=QnlhbEbz2eWvWaqR)
 - [Docker >> Simple Docker's Architecture](https://docs.docker.com/get-started/overview/#docker-architecture)
 
-[Get back to the index](/README.md)
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ## A Brief Intro about Linux
 
@@ -39,7 +41,9 @@
 - During the 1980s UNIX started diverging in many ways, varying a lot on its versions, and **many companies started selling computers with different variants of UNIX**.
 - In 1991 a man called **Linus Torvalds was unhappy with MS-DOS and MINIX** and developed its onw UNIX GNU licensed version named LINUX.
 
-[Get back to the index](/README.md)
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### The Linux Philosophy
 - **In summary**, the connection to the birth of Linux is Bell Labs **>>** Multics **>>** QWERTY keyboards **>>** the decision for it to be an open source.
@@ -51,13 +55,17 @@
 
 ![Linux_Variations](/Containers/images/tree.jpg)
 
-[Get back to the index](/README.md)
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### The Containerization of Linux
 - Linux **need to be ready to the desktop and for both all and new computers too**. The Canonical Ubuntu is the choosen distro for the community. The market was competing and divided among several platforms and Ubuntu aimed to solve that problem. For example, LindowsOS (Linspire >> FreeSpire) was interoperable with Windows DLLs and then you could run Windows applications on top of Ubuntu.
 - **Interoperability and Community was growing and in the age of 2018 the container timeline starts for Linux**, a way to ensure that a piece of software and its dependencies are packaged together so that can run anywhere (Docker, Vangrant and Kubernetes K<8>s), like in toasters, cars, siloed containers...
 
-[Get back to the index](/README.md)
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ## Containerization
 
@@ -70,7 +78,9 @@
 
 - **Docker's Client** talks to the **Docker's Host** (Docker Daemon) using its **REST API**. After this call, the host build, run and distribute your Docker containers to the **Docker's Registry**.
 
-[Get back to the index](/README.md)
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### What is a Container?
 
@@ -150,3 +160,7 @@
     - **CMD**: start you application
 
 [Watch this nice explanation about generating your image with LINUXtips](https://youtu.be/MeFyp4VnNx0?t=3316)
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)

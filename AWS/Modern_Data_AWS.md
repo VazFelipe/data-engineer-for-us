@@ -24,16 +24,30 @@
 
 - Edir Santana (AWS): https://www.linkedin.com/in/edir-cabral-santana-4642952a/
 
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 # O porquê de uma arquitetura moderna
 
 ![1](/AWS/images/1.png)
 
 [Uma documentação interessante sobre as diferenças entre os modelos de desenvolvimento aqui.](https://aws.amazon.com/pt/compare/the-difference-between-a-data-warehouse-data-lake-and-data-mart/)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 # Uma visão da arquitetura moderna na AWS
 ![3](/AWS/images/3.png)
 
 [Uma documentação na AWS sobre a arquitetura moderna aqui.](https://aws.amazon.com/pt/big-data/datalakes-and-analytics/modern-data-architecture/)
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 # Princípios
 
@@ -47,6 +61,11 @@
 
 [Uma documentação na AWS sobre os pilares aqui.](https://wa.aws.amazon.com/wat.pillars.wa-pillars.pt_BR.html)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 # Arquetura Moderna na Prática
 
 ![5](/AWS/images/5.png)
@@ -56,19 +75,39 @@
   - **Camada de consolidação**: dados transformados
   - **Camada de disponibilização**: dados prontos para consumo
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 ## Data Lakes Escaláveis - um caminho comum
 
 ![6](/AWS/images/6.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 ### Amazon S3 - armazenamento
 
 ![7](/AWS/images/7.png)
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### AWS Glue Catalog - integração
 
 ![23](/AWS/images/23.png)
 
 ![8](/AWS/images/8.png)
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### AWS Lake Formation - acesso
 
@@ -85,6 +124,11 @@
 
 ![11](/AWS/images/11.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 ### Querying the Data Lake - acesso
 
 ![12](/AWS/images/12.png)
@@ -94,6 +138,11 @@
   - Tipo parquet são colunares: consulta é mais barata no Athena
   - Se tiver filtros na restrição de acesso: criar partição
   - É possível fazer transformações dentro do Athena
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### Movimentação de dados
 
@@ -109,6 +158,11 @@
 
 ![14](/AWS/images/15.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 #### AWS DMS Database Migration Service
 
 ![16](/AWS/images/16.png)
@@ -117,6 +171,11 @@
 - Distribui (Fan Out)
 
 ![17](/AWS/images/17.png)
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 #### AWS Amazon Kinesis
 
@@ -136,25 +195,54 @@
 
 ![22](/AWS/images/22.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 #### AWS AppFlow Integration for Third-Party Apps (No code)
 
 ![20](/AWS/images/20.png)
 
 ![21](/AWS/images/21.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 ### AWS Simple Schema
 
 ![25](/AWS/images/25.png)
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### Redshift
 
 ![26](/AWS/images/26.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
+
 ### AWS ML Stack
 
 ![27](/AWS/images/27.png)
+
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
 
 ### AWS Analytics
 
 ![28](/AWS/images/29.png)
 
+
+[Get back to the main repo](/README.md)
+
+[Get back to this contents](#contents)
