@@ -1,0 +1,160 @@
+# Contents
+
+- [Contents](#contents)
+- [Contato do palestrante: AWS Modern Data Architectures](#contato-do-palestrante-aws-modern-data-architectures)
+- [O porquê de uma arquitetura moderna](#o-porquê-de-uma-arquitetura-moderna)
+- [Uma visão da arquitetura moderna na AWS](#uma-visão-da-arquitetura-moderna-na-aws)
+- [Princípios](#princípios)
+- [Arquetura Moderna na Prática](#arquetura-moderna-na-prática)
+  - [Data Lakes Escaláveis - um caminho comum](#data-lakes-escaláveis---um-caminho-comum)
+    - [Amazon S3 - armazenamento](#amazon-s3---armazenamento)
+    - [AWS Glue Catalog - integração](#aws-glue-catalog---integração)
+    - [AWS Lake Formation - acesso](#aws-lake-formation---acesso)
+    - [Querying the Data Lake - acesso](#querying-the-data-lake---acesso)
+    - [Movimentação de dados](#movimentação-de-dados)
+      - [AWS DMS Database Migration Service](#aws-dms-database-migration-service)
+      - [AWS Amazon Kinesis](#aws-amazon-kinesis)
+      - [AWS AppFlow Integration for Third-Party Apps (No code)](#aws-appflow-integration-for-third-party-apps-no-code)
+    - [AWS Simple Schema](#aws-simple-schema)
+    - [Redshift](#redshift)
+    - [AWS ML Stack](#aws-ml-stack)
+    - [AWS Analytics](#aws-analytics)
+
+# Contato do palestrante: AWS Modern Data Architectures
+
+- Edir Santana (AWS): https://www.linkedin.com/in/edir-cabral-santana-4642952a/
+
+# O porquê de uma arquitetura moderna
+
+![1](/aws/images/1.png)
+
+[Uma documentação interessante sobre as diferenças entre os modelos de desenvolvimento aqui.](https://aws.amazon.com/pt/compare/the-difference-between-a-data-warehouse-data-lake-and-data-mart/)
+
+# Uma visão da arquitetura moderna na AWS
+![3](/aws/images/3.png)
+
+[Uma documentação na AWS sobre a arquitetura moderna aqui.](https://aws.amazon.com/pt/big-data/datalakes-and-analytics/modern-data-architecture/)
+
+# Princípios
+
+![4](/aws/images/4.png)
+
+- **Data Lake Escalável**: repositório centralizado que armazena todas as estruturas de dados
+- **Serviços de propósito específico**: modelo democrático que contempla diferentes perfis e acessos ao dado
+- **Movimentação de dados**: fluxos de dados constantes que entram e saem do Data Lake
+- **Performance e custo-benefício**: serviços desacoplados da infraestrutura, pagamento conforme o consumo e alta performance em serviços de propósito específico 
+- **Governança unificada**: modelo de governança abrangente que consiga controlar o ambiente e mantê-lo sustentável
+
+[Uma documentação na AWS sobre os pilares aqui.](https://wa.aws.amazon.com/wat.pillars.wa-pillars.pt_BR.html)
+
+# Arquetura Moderna na Prática
+
+![5](/aws/images/5.png)
+
+- Nomenclaturas importantes na plataforma AWS:
+  - **Camada de entrada**: dados brutos
+  - **Camada de consolidação**: dados transformados
+  - **Camada de disponibilização**: dados prontos para consumo
+
+## Data Lakes Escaláveis - um caminho comum
+
+![6](/aws/images/6.png)
+
+### Amazon S3 - armazenamento
+
+![7](/aws/images/7.png)
+
+### AWS Glue Catalog - integração
+
+![23](/aws/images/23.png)
+
+![8](/aws/images/8.png)
+
+### AWS Lake Formation - acesso
+
+- [Lake Formation Workshop]()
+
+![9](/aws/images/9.png)
+
+- Nomenclaturas importantes na plataforma AWS:
+  - **Principal**: quem usa, exemplos de principals abaixo
+
+![10](/aws/images/10.png)
+
+- Permissões efetivas são aquelas que combinam métodos em databases, tabelas, colunas ou filtros e as tags
+
+![11](/aws/images/11.png)
+
+### Querying the Data Lake - acesso
+
+![12](/aws/images/12.png)
+
+- Acessa Delta, Iceberg e Hudi
+- Custo no Athena: organizar o dado para obter a melhor relação
+  - Tipo parquet são colunares: consulta é mais barata no Athena
+  - Se tiver filtros na restrição de acesso: criar partição
+  - É possível fazer transformações dentro do Athena
+
+### Movimentação de dados
+
+![13](/aws/images/13.png)
+
+- **Inside Out**: dados gerados de dentro do Data Lake para fora do ambiente
+- **Outside In**: dado de fora do ambiente para dentro do Data Lake, como dos logs para o centro do Data Lake
+- **Around the perimeter**: um exemplo é aquelas geradas por um modelo de Machine Learning que vai abastecer o perímetro ao redor do Data Lake
+
+![14](/aws/images/14.png)
+
+- Exemplos de **padrões para movimentação** de dados
+
+![14](/aws/images/15.png)
+
+#### AWS DMS Database Migration Service
+
+![16](/aws/images/16.png)
+
+- Replica
+- Distribui (Fan Out)
+
+![17](/aws/images/17.png)
+
+#### AWS Amazon Kinesis
+
+- Decisões importantes a considerar
+
+![24](/aws/images/24.png)
+
+- Permite MongoDb, DMS não.
+
+![18](/aws/images/18.png)
+
+- Senders e Consumers
+
+![19](/aws/images/19.png)
+
+- Diferenças entre Kinesis e MSK
+
+![22](/aws/images/22.png)
+
+#### AWS AppFlow Integration for Third-Party Apps (No code)
+
+![20](/aws/images/20.png)
+
+![21](/aws/images/21.png)
+
+### AWS Simple Schema
+
+![25](/aws/images/25.png)
+
+### Redshift
+
+![26](/aws/images/26.png)
+
+### AWS ML Stack
+
+![27](/aws/images/27.png)
+
+### AWS Analytics
+
+![28](/aws/images/29.png)
+

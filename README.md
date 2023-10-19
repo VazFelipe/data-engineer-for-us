@@ -3,7 +3,10 @@
 - [The Contents of this Repository](#the-contents-of-this-repository)
   - [What is this all about?](#what-is-this-all-about)
   - [Repository Structure](#repository-structure)
-  - [Containerization](#containerization)
+  - [Architecture](#architecture)
+    - [Containerization](#containerization)
+  - [Training Sessions](#training-sessions)
+    - [AWS Modern Data Architecture](#aws-modern-data-architecture)
 
 ## What is this all about?
 
@@ -25,11 +28,23 @@
     - Tech 1
     - Tech 2
     - Tech N
+  - Training Sessions
+    - Session 1
+    - Session 2
+    - Session N
 
 [Get back to the index](#the-contents-of-this-repository)
 
-## Containerization
+## Architecture
+### Containerization
 
-[Follow this article by clicking here](/Containers/Containers.md): Last update 2023-10-19
+**[Follow this article by clicking here](/Containers/Containers.md)**: Last update 2023-10-19
+
+[Get back to the index](#the-contents-of-this-repository)
+
+## Training Sessions
+### AWS Modern Data Architecture
+
+**[Follow this article by clicking here](/AWS/aws-training.md)**: Last update 2023-10-19
 
 [Get back to the index](#the-contents-of-this-repository)

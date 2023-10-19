@@ -26,6 +26,9 @@
 [Get back to the index](/README.md)
 
 ## A Brief Intro about Linux
+
+![Growth](/Containers/images/growth.jpg)
+
 ### The Growth of Linux 
 - **Old but Gold >> 1920s–1930s:** From telephones to telecommunications Nokia Bell Labs was the consolidation of several departments within the American Telephone & Telegraph company (AT&T) (https://www.bell-labs.com/about/history/#gref). 
 - The challenge at that age was **moving from typewriter and the punch cards idea** to the computer machine that we know nowadays.
@@ -46,6 +49,8 @@
 - But who controls Linux in terms of license? ICANN (Internet Corporation for Assigned Names And Numbers) coordinates the URL as unique identifiers for accessing web content around the globe, and the disputes for **licensing ownership created a lot of problems**, for example brazil started creating their own linux distros in which they could control and develop then they created a dizzying array of sister projects that are essentially language adapted distros and tools that are relevant to their country of origin. 
 - In the age of 2004 **it became a need to make a user-friendly version of a Linux Distro**, much of this because the philosophy of linux and maturity of the project itself that could be runned on the server side and now Linux was not easy to work for an average user.
 
+![Linux_Variations](/Containers/images/tree.jpg)
+
 [Get back to the index](/README.md)
 
 ### The Containerization of Linux
@@ -55,6 +60,9 @@
 [Get back to the index](/README.md)
 
 ## Containerization
+
+![Containerization](/Containers/images/container.jpg)
+
 ### Simple Docker's Architecture (Client-Server) Schema
 ![alt text][logo]
 
@@ -72,7 +80,7 @@
 
 - Let´s think about that hosts below, a server that we can do our things. We have two hosts, one for our Virtual Machines and the other for the Containers. Every host has its own **layer of hardware, operational system and the runtime**, such as Hypervisor, or Docker. In other words, we have the minimum requirements to make things work in the Virtual Machines and Container hosts.
 
-![our_hosts](/Containers/what_is_the_difference.png)
+![our_hosts](/Containers/images/what_is_the_difference.png)
 
 - Inside every Virtual Machine (VM) we will need a virtualized hardware, a new operational system and a **complexity for managing it all**, like vulnerabilites.
 
