@@ -10,6 +10,10 @@
     - [What is a Container?](#what-is-a-container)
     - [What is the difference between Virtual Machines and Containers?](#what-is-the-difference-between-virtual-machines-and-containers)
     - [What is Docker?](#what-is-docker)
+    - [What is a Docker Image?](#what-is-a-docker-image)
+    - [Installing Docker on your computer](#installing-docker-on-your-computer)
+    - [Docker commands](#docker-commands)
+    - [Build a Docker image](#build-a-docker-image)
 
 [Get back to the index](/README.md)
 
@@ -79,3 +83,62 @@
 - Docker is one of the organizations that delivers the container service, a way to isolate resources and run our applications.
 
 - There is a book explaining way better than me, click [here](https://livro.descomplicandodocker.com.br/chapters/chapter_00.html).
+
+### What is a Docker Image?
+
+- A Docker Image is a stopped container. We develop in our side what we judge essential to the application run healthy and in the Docker image it will be encapsulated.
+
+### Installing Docker on your computer
+
+- Requirements
+  - A running version of Linux with access to the command line
+    - [Ubuntu on WSL2](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview)
+  - A way to create and send your own images
+    - [Docker Hub Account](https://hub.docker.com/)
+
+- Installation using Linux shell
+  1. sudo apt update
+  2. sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  3. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  4. sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+  5. sudo apt update
+  6. apt-cache policy docker-ce
+  7. sudo apt install docker-ce
+  8. sudo systemctl status docker
+
+[For more details follow this link in the Digital Ocean webpage](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-pt)
+
+### Docker commands
+
+- This is not an exhaustive list of commands, but covers some
+  - **docker help**: list of available commands
+  - **docker container ls**: verify the container status 
+  - **docker container run**: run the container image in the Docker Daemon and release the terminal. After this you will have a container! voi là 👌
+  - **docker container logs**: verify the container logs in execution
+  - **docker container rm {CONTAINER ID}**: remove the container, but before you will have to stop them
+  - **docker container stop {CONTAINER ID}**: stop the container in execution 
+  - **docker container start {CONTAINER ID}**: start the container
+  - **docker container exec -it {CONTAINER ID}**: get into and run a command in the container in execution
+  - **docker container inspect {CONTAINER ID}**: inspect a container image   
+  - **docker images OR docker image ls**: check existing images
+  - **docker image inspect {REPOSITORY:TAG}**: inspect the images
+  - **docker image tag --help**: identifies how to modify the tagging of the container image
+  - **docker pull {image name}**: download an image
+  - **docker image rmi**: remove an image (stop the container)
+
+[Click here to run a getting-started application](https://docs.docker.com/get-started/02_our_app/)
+
+[Watch this nice explanation about the getting-started application with LINUXtips](https://youtu.be/MeFyp4VnNx0?t=2129)
+
+### Build a Docker image
+
+- You will need to generate a Dockerfile, that is a file with no extension that contains Docker instructions to build your Docker image, like this:
+    - **FROM**: choose the base image (not the SO/Kernel)
+    - **RUN**: run the commands when it is building the image
+    - **WORKDIR**: root directory of your application when start the container
+    - **COPY**: copy the application from your computer to the container
+    - **EXPOSE**: expose the port that your application will communicate to the world
+    - **ENTRYPOINT**: the main process of your application
+    - **CMD**: start you application
+
+[Watch this nice explanation about generating your image with LINUXtips](https://youtu.be/MeFyp4VnNx0?t=3316)
