@@ -45,6 +45,6 @@
 ## Training Sessions
 ### AWS Modern Data Architecture
 
-**[Follow this article by clicking here](/AWS/aws-training.md)**: Last update 2023-10-19
+**[Follow this article by clicking here](/AWS/Modern_Data_AWS.md)**: Last update 2023-10-19
 
 [Get back to the index](#the-contents-of-this-repository)
