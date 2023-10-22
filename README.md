@@ -7,6 +7,7 @@
     - [Containerization](#containerization)
   - [Training Sessions](#training-sessions)
     - [AWS Modern Data Architecture](#aws-modern-data-architecture)
+    - [Exception Handling in Python](#exception-handling-in-python)
 
 ## What is this all about?
 
@@ -48,3 +49,7 @@
 **[Follow this article by clicking here](/AWS/Modern_Data_AWS.md)**: Last update 2023-10-19
 
 [Get back to the index](#the-contents-of-this-repository)
+
+### Exception Handling in Python
+
+**[Follow this article by clicking here](/Python/error_exception.md)**: Last update 2023-10-22
