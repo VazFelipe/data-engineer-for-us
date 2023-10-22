@@ -53,3 +53,5 @@
 ### Exception Handling in Python
 
 **[Follow this article by clicking here](/Python/error_exception.md)**: Last update 2023-10-22
+
+[Get back to the index](#the-contents-of-this-repository)
