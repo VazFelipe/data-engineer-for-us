@@ -202,7 +202,7 @@ finally:
 - Does a finally clause always execute?
 - Why is a finally clause effective?
 
-![certificate](/python/images/certificate.png)
+![certificate](/Python/images/certificate.png)
 
 [Get back to the main repo](/README.md)
 
