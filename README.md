@@ -3,6 +3,8 @@
 - [The Contents of this Repository](#the-contents-of-this-repository)
   - [What is this all about?](#what-is-this-all-about)
   - [Repository Structure](#repository-structure)
+  - [Code snippets](#code-snippets)
+    - [Python](#python)
   - [Architecture](#architecture)
     - [Containerization](#containerization)
   - [Training Sessions](#training-sessions)
@@ -35,6 +37,10 @@
     - Session N
 
 [Get back to the index](#the-contents-of-this-repository)
+
+## Code snippets
+### Python
+- [Loops](/Code%20Snippets/Python/loops.py)
 
 ## Architecture
 ### Containerization
