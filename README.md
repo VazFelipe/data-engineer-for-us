@@ -42,6 +42,8 @@
 ### Python
 - [Loops](/Code%20Snippets/Python/loops.py)
 
+[Get back to the index](#the-contents-of-this-repository)
+
 ## Architecture
 ### Containerization
 
