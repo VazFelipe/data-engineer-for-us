@@ -29,7 +29,7 @@ print('do something\n' * 3, end='')
 
 # asking the user for some particular return n times
 while True:
-    n = int(input("What´s n? "))
+    n = int(input("What's n? "))
     if n < 0:
         # using the keyword continue to keep on that loop until 
         # the user returns what I've asked
@@ -47,3 +47,16 @@ while True:
 
 for _ in range(n):
     print('do something')
+
+# for loop from lists
+# Just remeber: Python lists can hold arbitrary elements
+# everything is an object in Python, including functions
+# loop into the list will require us to now how many elements are there
+# we will use range and len methods to help us
+# more details in https://docs.python.org/3/tutorial/datastructures.html#tut-loopidioms
+
+things = ['me', 'you', 'us', 33]
+
+for thing in range(len(things)):
+    print(things[i])
+
