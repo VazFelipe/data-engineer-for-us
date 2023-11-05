@@ -41,6 +41,7 @@
 ## Code snippets
 ### Python
 - [Loops](/Code%20Snippets/Python/loops.py)
+- [Naive Program Using Loops](/Code%20Snippets/Python/naive_do_something_n_times.py)
 
 [Get back to the index](#the-contents-of-this-repository)
 
