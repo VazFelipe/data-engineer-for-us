@@ -10,6 +10,7 @@
   - [Training Sessions](#training-sessions)
     - [AWS Modern Data Architecture](#aws-modern-data-architecture)
     - [Exception Handling in Python](#exception-handling-in-python)
+    - [Talento Cloud](#talento-cloud)
 
 ## What is this all about?
 
@@ -64,3 +65,7 @@
 **[Follow this article by clicking here](/Python/error_exception.md)**: Last update 2023-10-22
 
 [Get back to the index](#the-contents-of-this-repository)
+
+### Talento Cloud
+
+**[Follow this article by clicking here](/Introdução%20à%20Programação/talento_cloud.md)**: Last update 2023-11-14
