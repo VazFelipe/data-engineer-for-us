@@ -69,3 +69,5 @@
 ### Talento Cloud
 
 **[Follow this article by clicking here](/Introdução%20à%20Programação/talento_cloud.md)**: Last update 2023-11-14
+
+[Get back to the index](#the-contents-of-this-repository)

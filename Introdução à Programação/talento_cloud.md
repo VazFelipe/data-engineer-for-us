@@ -1,14 +1,14 @@
-# The Contents of this Repository
+# O conteúdo deste documento
 
-- [The Contents of this Repository](#the-contents-of-this-repository)
-  - [Logical Reasoning](#logical-reasoning)
-  - [Imperative Logic](#imperative-logic)
+- [O conteúdo deste documento](#o-conteúdo-deste-documento)
+  - [Raciocínio lógico](#raciocínio-lógico)
+  - [Lógica imperativa](#lógica-imperativa)
 
-## Logical Reasoning
+## Raciocínio lógico
 
 - Estrutura o pensamento baseado em normas da lógica para chegar a uma conclusão.
 
-## Imperative Logic
+## Lógica imperativa
 
 - Lógica
   - Entende-se como a **correção do pensamento**, uma maneira de colocar a mente em ordem
@@ -35,3 +35,19 @@
   - Os **tipos de dados** são: inteiros (1, 2), reais (decimais), caracteres (letras, números e especiais) e lógicos (true, false)
   - Os dados são **recebidos em variáveis**, que funcionam como identificadores
   - Os dados podem ser **variáveis** (podem mudar) ou **constantes** (não podem mudar)
+
+- Expressões lógicas
+  - Operadores relacionais
+  - **Operadores lógicos**
+- Tabela-verdade
+  - São todas as combinações possíveis de verdadeiro ou falso usando os **operadores lógicos** para testar o resultado
+  - Ordem dos operadores
+    - Aritméticos > relacionais > lógicos (negação **NÃO** >> conjunção **E** >> disjunção **OU**)
+- Estruturas condicionais
+  - Fluxo do algoritmo
+    - Simples: SE (condicao) ENTAO (instrucao) FIMSE
+    - Composta: SE, SENAO e FIMSE
+    - Encadeada: SE, SENAO, SE, SENAO, FIMSE
+    - Múltipla escolha: ESCOLHA, CASO E FIMESCOLHA
+- Estruturas de repetição
+  - Podemos desenvolver códigos mais organizador e sem repetir as instruções
