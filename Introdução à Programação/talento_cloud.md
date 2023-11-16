@@ -51,3 +51,7 @@
     - Múltipla escolha: ESCOLHA, CASO E FIMESCOLHA
 - Estruturas de repetição
   - Podemos desenvolver códigos mais organizador e sem repetir as instruções
+
+[Voltar ao repositório principal](/README.md)
+
+[Voltar ao índice](#o-conteúdo-deste-documento)
