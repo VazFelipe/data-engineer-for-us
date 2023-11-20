@@ -3,10 +3,15 @@
 - [O conteúdo deste documento](#o-conteúdo-deste-documento)
   - [Raciocínio lógico](#raciocínio-lógico)
   - [Lógica imperativa](#lógica-imperativa)
+  - [Introdução à Programação](#introdução-à-programação)
 
 ## Raciocínio lógico
 
 - Estrutura o pensamento baseado em normas da lógica para chegar a uma conclusão.
+
+[Voltar ao repositório principal](/README.md)
+
+[Voltar ao índice](#o-conteúdo-deste-documento)
 
 ## Lógica imperativa
 
@@ -37,7 +42,7 @@
   - Os dados podem ser **variáveis** (podem mudar) ou **constantes** (não podem mudar)
 
 - Expressões lógicas
-  - Operadores relacionais
+  - Operadores relacionais (>, >=, <, <=)
   - **Operadores lógicos**
 - Tabela-verdade
   - São todas as combinações possíveis de verdadeiro ou falso usando os **operadores lógicos** para testar o resultado
@@ -51,6 +56,43 @@
     - Múltipla escolha: ESCOLHA, CASO E FIMESCOLHA
 - Estruturas de repetição
   - Podemos desenvolver códigos mais organizador e sem repetir as instruções
+
+- Perguntas importantes
+  - Um algoritmo tradicional tem 3 etapas, porém, quando escrevemosum algoritmo num software muitas vezes precisamos incluir uma quarta etapa. Escreva os nomes das etapas que você lembrar:
+    - QUARTA ETAPA: declaração de variáveis
+      - armazenamento dos dados na etapa de entrada de dados
+    - Entrada de dados
+    - Processamento de dados
+    - Resultado / Saída de dados
+  - Podemos agrupar os dados em quatro tipos. Quais deles você lembra?
+    - inteiros (1, 2), reais (decimais), caracteres (letras, números e especiais) e lógicos (true, false)
+  - O que um comando de saída e um comando de entrada fazem, respectivamente?
+    - Na saída exibe informações ao usuário e o de entrada recebe informações
+
+[Voltar ao repositório principal](/README.md)
+
+[Voltar ao índice](#o-conteúdo-deste-documento)
+
+## Introdução à Programação
+
+- Programação
+  - **Linhas de código** que executam instruções, são os algoritmos
+  - A **ordem da execução** é a lógica da programação e não existe uma única forma para executar
+  - Encontramos algoritmos fora da programação, como uma **receita de bolo**
+    - Os ingredientes são equivalentes às variáveis
+    - A quantidade dos ingredientes os valores das variáveis
+    - O modo de preparo os comandos necessários para fazer o bolo
+    - Devemos acompanhar a sequência dos passos, a ordem coerente dos passos (analogamente, lógica de programação)
+  - Na lógica de programação **precisamos**
+    - Saber quais os passos são requisitos
+    - Qual é o melhor caminho
+    - Qual é a melhor forma para alcançar o objetivo 
+  - Um algoritmo é um conjunto de instruções que irá atender a um objetivo, não necessariamente na computação
+
+- Tipos de reprentação de um algoritmo
+  - Pseudocódigo: etapas conceituais para resolução de um desafio
+  - Fluxograma: forma gráfica, com setas e formas geométricas que representa o fluxo do processo
+
 
 [Voltar ao repositório principal](/README.md)
 
