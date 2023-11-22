@@ -112,6 +112,7 @@
   - ![Tipo de dados](/Introdução%20à%20Programação//imagens/tipos_dados.png)
   - ![Comando de saída](/Introdução%20à%20Programação/imagens/comando.png)
   - ![Operadores](/Introdução%20à%20Programação/imagens/operador.png)
+  - ![Operadores aritméticos](/Introdução%20à%20Programação/imagens/operador_aritmetico.png)
 
 [Voltar ao repositório principal](/README.md)
 
