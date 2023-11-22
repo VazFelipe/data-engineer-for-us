@@ -93,6 +93,20 @@
   - Pseudocódigo: etapas conceituais para resolução de um desafio
   - Fluxograma: forma gráfica, com setas e formas geométricas que representa o fluxo do processo
 
+- Tipos de dados: **constantes e variáveis**
+  - São valores ou resultados que são **armazenados** na programação
+  - Isto evita a **repetição e erros** em projetos, pois o dado armazenado vai suprir uma necessidade
+  - As variáveis tem diferentes tipos e por isto precisam ser **armazenadas em lugares específicos**
+    - Tipo **inteiro**: integer (positivos e negativos)
+    - Tipo **real**: float (positivo e negativo)
+    - Tipo **caractere**: string (palavras)
+    - Tipo **lógico**: boolean (verdadeiro ou falso) 
+- Tipos de operadores
+  - São utilizados para fazer comparações e operações no programas
+  - Atribuição: armazenar o valor nas variáveis
+  - Aritméticos: são as operações matemáticas básicas
+  - Relacionais: usados para realizar comparações com a lógica booleana (verdadeiro e falso)
+  - Lógicos: analisar uma ou mais condições lógicas e resultam em valores booleanos
 
 [Voltar ao repositório principal](/README.md)
 
