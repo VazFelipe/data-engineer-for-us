@@ -1,8 +1,8 @@
 """
 Desenvolva um algoritmo que utilize as seguintes características de um veículo:
-- Quantidade de rodas;
-- Peso bruto em quilogramas;
-- Quantidade de pessoas no veículo.
+- Quantidade de rodas
+- Peso bruto em quilogramas
+- Quantidade de pessoas no veículo
 
 Com essas informações, o programa mostrará qual é a melhor categoria de habilitação para o veículo informado a partir das condições:
 A: Veículos com duas ou três rodas;
