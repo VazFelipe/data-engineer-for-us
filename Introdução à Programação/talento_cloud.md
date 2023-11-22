@@ -108,6 +108,11 @@
   - Relacionais: usados para realizar comparações com a lógica booleana (verdadeiro e falso)
   - Lógicos: analisar uma ou mais condições lógicas e resultam em valores booleanos
 
+- Equivalências entre lógica imperativa e linguagem de programação
+  - ![Tipo de dados](/Introdução%20à%20Programação//imagens/tipos_dados.png)
+  - ![Comando de saída](/Introdução%20à%20Programação/imagens/comando.png)
+  - ![Operadores](/Introdução%20à%20Programação/imagens/operador.png)
+
 [Voltar ao repositório principal](/README.md)
 
 [Voltar ao índice](#o-conteúdo-deste-documento)
