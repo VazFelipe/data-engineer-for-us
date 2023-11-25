@@ -60,3 +60,15 @@ things = ['me', 'you', 'us', 33]
 for thing in range(len(things)):
     print(things[i])
 
+# reprompt the user to input values again
+# source: https://stackoverflow.com/questions/55437419/how-to-use-the-try-except-command-in-a-while-loop-asking-for-user-input
+
+while True:
+    try:
+        my_integer = int(input("Please give an integer number"))
+    except ValueError:
+        print("This was not a valid input please try again")
+    else:
+        break  # <-- if the user inputs a valid score, this will break the input loop
+
+print ("my integer is:", my_integer)
