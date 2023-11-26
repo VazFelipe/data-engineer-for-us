@@ -20,14 +20,17 @@ def idade_usuario():
     """
     while True:
         try:                    
-            entrada_dados = input("Digite seu nome completo e ano de nascimento com 4 números inteiros: ")
+            entrada_dados = input("Digite seu nome completo e ano de nascimento com 4 números inteiros ntre 1922 e 2021: ")
             ano_referencia = input("Digite o ano de referência com 4 números inteiros para cálculo da idade: ")
             ano_nascimento = int(entrada_dados[len(entrada_dados)-4:])
             ano_referencia = int(ano_referencia)
             nome_completo = entrada_dados[:-5]
 
-            idade = ano_referencia - ano_nascimento
-            mensagem = f'{nome_completo} {idade}' 
+            if not 1922 <= ano_nascimento <= 2021:
+                raise ValueError
+            else:
+                idade = ano_referencia - ano_nascimento
+                mensagem = f'{nome_completo} {idade}' 
         except ValueError:
             print(f'{ValueError}: Ops, algo deu errado. Digite novamente, por exemplo: Meu Nome 2000')
         else:
