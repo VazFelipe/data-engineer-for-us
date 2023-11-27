@@ -72,3 +72,22 @@ while True:
         break  # <-- if the user inputs a valid score, this will break the input loop
 
 print ("my integer is:", my_integer)
+
+# teste fim
+plantas = ["tomate","banana","maça","melancia","abacate","laranja"]
+contador = 0
+max_plantas = len(plantas)
+
+while True:
+    mensagem = f'Rega a planta {plantas[contador]}'
+    print(mensagem)
+    contador += 1
+
+    if contador == max_plantas:
+        break
+
+# teste início
+while contador < max_plantas:
+    mensagem = f'Rega a planta {plantas[contador]}'
+    print(mensagem)
+    contador += 1
