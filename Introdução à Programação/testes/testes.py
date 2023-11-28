@@ -29,9 +29,9 @@
 
 
 # teste fim
-plantas = ["tomate","banana","maça","melancia","abacate","laranja"]
-contador = 0
-max_plantas = len(plantas)
+# plantas = ["tomate","batata","batata","tomate","tomate","batata"]
+# contador = 0
+# max_plantas = len(plantas)
 
 # while True:
 #     mensagem = f'Rega a planta {plantas[contador]}'
@@ -49,20 +49,47 @@ max_plantas = len(plantas)
 
 # regar somente tomates
 # teste início
-while contador < max_plantas:
-    mensagem = f'Rega a planta {plantas[contador]}'
+# while contador < max_plantas:
     
+#     if plantas[contador] == "tomate":
+#         mensagem = f'Rega a planta {contador} {plantas[contador]}'
+#         print(mensagem)    
     
-    if plantas[contador] == "tomate":
-        print(mensagem)    
-    
-    contador += 1
+#     contador += 1
 
 # teste fim
-while True:
-    mensagem = f'Rega a planta {plantas[contador]}'
+# while True:
 
-    if plantas[contador] == "tomate":
-        print(mensagem)
-        contador += 1
-        break
+#     if plantas[contador] == "tomate":
+#         mensagem = f'Rega a planta {contador} {plantas[contador]}'
+#         print(mensagem)
+#         break
+    
+#     contador += 1
+
+# def adicao(numero_1, numero_2):
+#     soma = int(numero_1) + int(numero_2)
+#     return soma
+
+# resultado_soma = adicao(numero_1=1, numero_2=1)
+# print(resultado_soma)
+
+
+def subtracao(numero_1, numero_2):
+    subtracao = int(numero_1) - int(numero_2)
+    return subtracao
+
+resultado_subtracao = subtracao(numero_1=10, numero_2=4)
+print(resultado_subtracao)
+
+
+# def divisao(numero_1, numero_2):
+#     if numero_2 == "0" or numero_2 == 0:
+#         return "no denominador não pode ser zero"
+    
+#     else:
+#         divisao = int(numero_1) / int(numero_2)
+#         return divisao
+
+# resultado_divisao = divisao(numero_1=1, numero_2=0)
+# print(resultado_divisao)
