@@ -5,7 +5,7 @@ def programa():
     
     entrada_dados = input("Digite um número inteiro: ")
 
-    while True:
+    while True: 
         try:
             converte_inteiro = int(entrada_dados)
             if entre_zero_cem(converte_inteiro) and numero_par(converte_inteiro) and divisivel_dois_tres(converte_inteiro):
