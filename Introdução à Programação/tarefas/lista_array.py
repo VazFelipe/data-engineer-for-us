@@ -22,6 +22,8 @@ def programa():
     print('\n')
     for i in range(len(lista_musicos)):
         print(f'{i} - {lista_musicos[i]}')
+
+    print(f'A lista possui {len(lista_musicos)} músicos.\n')
     
     imprime_indices(lista_musicos)
 
