@@ -9,6 +9,7 @@
     - [Containerization](#containerization)
   - [Training Sessions](#training-sessions)
     - [AWS Modern Data Architecture](#aws-modern-data-architecture)
+    - [CS50's Introduction to Programming with Python](#cs50s-introduction-to-programming-with-python)
     - [Exception Handling in Python](#exception-handling-in-python)
     - [Talento Cloud](#talento-cloud)
 
@@ -66,7 +67,7 @@
 
 ### CS50’s Introduction to Programming with Python
 
-**[Follow this article by clicking here](/CS50/CS50.md)**: Last update 2023-12-02
+**[Follow this article by clicking here](/CS50/README.md)**: Last update 2023-12-02
 
 [Get back to the index](#the-contents-of-this-repository)
 

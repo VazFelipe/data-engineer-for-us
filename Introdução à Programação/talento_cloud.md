@@ -109,11 +109,7 @@
   - Lógicos: analisar uma ou mais condições lógicas e resultam em valores booleanos
 
 - Equivalências entre lógica imperativa e linguagem de programação
-  - ![Tipo de dados](/Introdução%20à%20Programação//imagens/tipos_dados.png)
-  - ![Comando de saída](/Introdução%20à%20Programação/imagens/comando.png)
-  - ![Operadores](/Introdução%20à%20Programação/imagens/operador.png)
-  - ![Operadores aritméticos](/Introdução%20à%20Programação/imagens/operador_aritmetico.png)
-  - ![Operadores aritméticos](/Introdução%20à%20Programação/imagens/operador_relacional.png)
+  - [tabela de conversão](https://docs.google.com/document/d/1x_rfWfRXIP8xHahZatwzZAkVLf1nBgUVFP85GqQd0o8/edit?pli=1)
 
 [Voltar ao repositório principal](/README.md)
 
