@@ -54,6 +54,9 @@ def lista_atualizada_produtos(lista_produtos):
             elif lista_produtos[contador] == "loções":
                 lista_produtos[contador] = "**"+lista_atualizada_produtos[1]+"**"
         contador += 1
+    
+    novos_produtos = input("Se preferir, digite novos produtos separados por espaço: ").split()
+    lista_produtos.extend(novos_produtos)
 
     for produto in range(len(lista_produtos)):
         print(f'Temos {lista_produtos[produto]} à venda!')
