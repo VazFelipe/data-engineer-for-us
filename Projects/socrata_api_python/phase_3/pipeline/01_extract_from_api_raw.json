@@ -1,0 +1,239 @@
+{
+	"name": "01_extract_from_api_raw",
+	"properties": {
+		"activities": [
+			{
+				"name": "trigger_time",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "trigger_time",
+					"value": {
+						"value": "@addDays(pipeline().TriggerTime, -1)",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Socrata Api to Blob Storage Gen2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "url_api",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"supportRFC5988": "true"
+						}
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"parallelCopies": 1,
+					"dataIntegrationUnits": 2
+				},
+				"inputs": [
+					{
+						"referenceName": "SFPD_restapi_raw",
+						"type": "DatasetReference",
+						"parameters": {
+							"exclude_system_fields": {
+								"value": "@pipeline().parameters.exclude_system_fields",
+								"type": "Expression"
+							},
+							"limit": {
+								"value": "@pipeline().parameters.limit",
+								"type": "Expression"
+							},
+							"where_1": {
+								"value": "@pipeline().parameters.where_1",
+								"type": "Expression"
+							},
+							"start_date": {
+								"value": "@concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T00:00:00'''))",
+								"type": "Expression"
+							},
+							"end_date": {
+								"value": "@concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T23:59:59'''))",
+								"type": "Expression"
+							},
+							"where_2": {
+								"value": "@pipeline().parameters.where_2",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SFPD_response_raw",
+						"type": "DatasetReference",
+						"parameters": {
+							"dataset": {
+								"value": "@pipeline().parameters.dataset",
+								"type": "Expression"
+							},
+							"trigger_time_year": {
+								"value": "@formatDateTime(variables('trigger_time'), 'yyyy')",
+								"type": "Expression"
+							},
+							"trigger_time_month": {
+								"value": "@formatDateTime(variables('trigger_time'), 'MM')",
+								"type": "Expression"
+							},
+							"response_format": {
+								"value": "@pipeline().parameters.response_format",
+								"type": "Expression"
+							},
+							"unix_trigger_time": {
+								"value": "@variables('unix_trigger_time')",
+								"type": "Expression"
+							},
+							"file_path": {
+								"value": "@concat(concat(concat(concat(concat('01-raw/',pipeline().parameters.dataset,'/'), formatDateTime(variables('trigger_time'), 'yyyy')),'/'),formatDateTime(variables('trigger_time'), 'MM')),'/')",
+								"type": "Expression"
+							},
+							"file_name": {
+								"value": "@concat(concat(concat(concat(concat(concat(string(sub(div(ticks(variables('trigger_time')),10000000),div(ticks(variables('param_epoch')),10000000))),'_'),pipeline().parameters.field_name_1,'_'),pipeline().parameters.field_name_2),'_'),formatDateTime(replace(concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T00:00:00''')),'''',''), 'yyyyMMdd')),pipeline().parameters.response_format)",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "url_api",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "trigger_time",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "url_api",
+					"value": {
+						"value": "@{concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat(concat('https://data.sfgov.org/resource/wg3w-h783.json?$$exclude_system_fields=',pipeline().parameters.exclude_system_fields),'&$limit='),pipeline().parameters.limit),'&$where='),'('),pipeline().parameters.where_1),'BETWEEN '),concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T00:00:00'''))),' AND '), concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T23:59:59'''))),') OR ('),pipeline().parameters.where_2),'BETWEEN '),concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T00:00:00'''))),' AND '), concat('''',concat(formatDateTime(variables('trigger_time'), 'yyyy-MM-dd'),'T23:59:59'''))),')')}",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"exclude_system_fields": {
+				"type": "string",
+				"defaultValue": "False"
+			},
+			"limit": {
+				"type": "string",
+				"defaultValue": "9999999999"
+			},
+			"where_1": {
+				"type": "string",
+				"defaultValue": ":created_at "
+			},
+			"dataset": {
+				"type": "string",
+				"defaultValue": "police_department"
+			},
+			"field_name_1": {
+				"type": "string",
+				"defaultValue": "created_at"
+			},
+			"response_format": {
+				"type": "string",
+				"defaultValue": ".json"
+			},
+			"field_name_2": {
+				"type": "string",
+				"defaultValue": "updated_at"
+			},
+			"where_2": {
+				"type": "string",
+				"defaultValue": ":updated_at "
+			}
+		},
+		"variables": {
+			"param_epoch": {
+				"type": "String",
+				"defaultValue": "1970-01-01T00:00:00Z"
+			},
+			"trigger_time": {
+				"type": "String"
+			},
+			"unix_trigger_time": {
+				"type": "String"
+			},
+			"trigger_time_year": {
+				"type": "String"
+			},
+			"trigger_time_month": {
+				"type": "String"
+			},
+			"file_path": {
+				"type": "String"
+			},
+			"file_name": {
+				"type": "String"
+			},
+			"start_date": {
+				"type": "String"
+			},
+			"response_execution_log": {
+				"type": "String"
+			},
+			"end_date": {
+				"type": "String"
+			},
+			"insert_datetime": {
+				"type": "String"
+			},
+			"url_api": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-06-03T23:31:28Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

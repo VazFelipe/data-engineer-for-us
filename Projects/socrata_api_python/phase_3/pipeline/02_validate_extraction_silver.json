@@ -1,0 +1,165 @@
+{
+	"name": "02_validate_extraction_silver",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy watermark to blob",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"additionalColumns": [
+							{
+								"name": "processing_mode_",
+								"value": {
+									"value": "@string('FULL LOAD')",
+									"type": "Expression"
+								}
+							},
+							{
+								"name": "insert_datetime_",
+								"value": {
+									"value": "@pipeline().TriggerTime",
+									"type": "Expression"
+								}
+							}
+						],
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"parallelCopies": 1,
+					"dataIntegrationUnits": 2,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "processing_mode_",
+									"type": "String"
+								},
+								"sink": {
+									"name": "processing_mode",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "insert_datetime_",
+									"type": "String"
+								},
+								"sink": {
+									"name": "insert_datetime",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SFPD_log_template_silver",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SFPD_log_template_silver",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Watermark unified and validation",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [
+					{
+						"activity": "Copy watermark to blob",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "02_watermark_append_validate_data_silver",
+						"type": "DataFlowReference",
+						"parameters": {
+							"file_name": {
+								"value": "'@{pipeline().parameters.file_name}'",
+								"type": "Expression"
+							},
+							"dataset": {
+								"value": "'@{pipeline().parameters.dataset}'",
+								"type": "Expression"
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "None",
+					"runConcurrently": true
+				}
+			}
+		],
+		"parameters": {
+			"file_name": {
+				"type": "string",
+				"defaultValue": "san_francisco_police_department.parquet"
+			},
+			"dataset": {
+				"type": "string",
+				"defaultValue": "police_department"
+			}
+		},
+		"variables": {
+			"insert_datetime": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}

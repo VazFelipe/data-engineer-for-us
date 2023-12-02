@@ -1,0 +1,59 @@
+{
+	"name": "SFPD_restapi_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestApiSocrataService",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"exclude_system_fields": {
+					"value": "@dataset().exclude_system_fields",
+					"type": "Expression"
+				},
+				"limit": {
+					"value": "@dataset().limit",
+					"type": "Expression"
+				},
+				"where_1": {
+					"value": "@dataset().where_1",
+					"type": "Expression"
+				},
+				"start_date": {
+					"value": "@dataset().start_date",
+					"type": "Expression"
+				},
+				"end_date": {
+					"value": "@dataset().end_date",
+					"type": "Expression"
+				},
+				"where_2": {
+					"value": "@dataset().where_2",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"exclude_system_fields": {
+				"type": "string"
+			},
+			"limit": {
+				"type": "string"
+			},
+			"where_1": {
+				"type": "string"
+			},
+			"start_date": {
+				"type": "string"
+			},
+			"end_date": {
+				"type": "string"
+			},
+			"where_2": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

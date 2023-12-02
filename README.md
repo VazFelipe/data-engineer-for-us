@@ -36,6 +36,10 @@
     - Session 1
     - Session 2
     - Session N
+  - Projects
+    - Project 1
+    - Project 2
+    - Project N
 
 [Get back to the index](#the-contents-of-this-repository)
 
@@ -60,6 +64,12 @@
 
 [Get back to the index](#the-contents-of-this-repository)
 
+### CS50’s Introduction to Programming with Python
+
+**[Follow this article by clicking here](/CS50/CS50.md)**: Last update 2023-12-02
+
+[Get back to the index](#the-contents-of-this-repository)
+
 ### Exception Handling in Python
 
 **[Follow this article by clicking here](/Python/error_exception.md)**: Last update 2023-10-22
@@ -69,5 +79,12 @@
 ### Talento Cloud
 
 **[Follow this article by clicking here](/Introdução%20à%20Programação/talento_cloud.md)**: Last update 2023-11-14
+
+[Get back to the index](#the-contents-of-this-repository)
+
+## Projects
+### Socrata API
+
+**[Follow this article by clicking here](/Projects/socrata_api_python/README.md)**: Last update 2023-12-02
 
 [Get back to the index](#the-contents-of-this-repository)
