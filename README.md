@@ -83,7 +83,7 @@
 [Get back to the index](#the-contents-of-this-repository)
 
 ## Projects
-### Socrata API
+### Socrata's API
 
 **[Follow this article by clicking here](/Projects/socrata_api_python/README.md)**: Last update 2023-12-02
 
