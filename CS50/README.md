@@ -4,7 +4,7 @@
 
 - [Website](https://cs50.harvard.edu/python/2022/)
     - [0.Functions, Variables](https://cs50.harvard.edu/python/2022/weeks/0/)
-        - [indoor.py](CS50/57250903/indoor/)
+        - [indoor.py](./CS50/57250903/indoor/)
         - [playback.py](CS50/57250903/playback/)
         - [faces.py](CS50/57250903/faces/)
         - [einstein.py](CS50/57250903/einstein/)
