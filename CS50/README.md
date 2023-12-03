@@ -29,7 +29,8 @@
     - [4.Libraries](https://cs50.harvard.edu/python/2022/weeks/4/)
         - [emojize.py](/CS50/57250903/emojize/emojize.py)
         - [figlet.py](/cs50/57250903/figlet/figlet.py)
-        - [adieu.py]**doing**
+        - [adieu.py](/cs50/57250903/adieu/adieu.py)
+        - [game.py]**doing**
     - [5.Unit Tests](https://cs50.harvard.edu/python/2022/weeks/5/)
     - [6.File I/O](https://cs50.harvard.edu/python/2022/weeks/6/)
     - [7.Regular Expressions](https://cs50.harvard.edu/python/2022/weeks/7/)
