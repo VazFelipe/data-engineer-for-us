@@ -8,7 +8,9 @@ def main():
     
     listar_produtos(lista_produtos_padrao)
 
-    adicionar_produtos(lista_produtos_padrao)
+    # apresenta_funcoes()
+
+    print(adicionar_produtos(lista_produtos_padrao))
     # substituir_produtos()
 
 
@@ -33,15 +35,33 @@ def definir_proprietario():
     mensagem = f'\nOlá {proprietário}!\n'
 
     return mensagem 
-    
+
+def apresenta_funcoes():
+
+    lista_funcoes = ["definir_proprieatrio", "listar_produtos", "adicionar_produtos", "substituir_produtos", "remover_produtos"]
+
+    lista = [funcao for funcao in lista_funcoes]
+
+    print(lista)
+
 def listar_produtos(lista_produtos_padrao):
 
     print('Abaixo nossa lista de produtos em estoque:\n')
+
+    lista_produtos_padrao.sort()
 
     for indice in range(len(lista_produtos_padrao)):
         print(f'{indice} - {lista_produtos_padrao[indice]}')
 
 def adicionar_produtos(lista_produtos_padrao):
-    pass
-              
+    
+    lista_adicionar_produtos = input("\nPara adicionar produtos digite-os separados por espaços: ").split(" ")
+
+    lista_produtos_padrao.extend(lista_adicionar_produtos)
+    lista_produtos_padrao.sort()
+
+    mensagem = f'\nA nova lista de produtos em estoque é: {lista_produtos_padrao}\n'
+
+    return mensagem
+        
 main()
