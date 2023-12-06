@@ -1,9 +1,14 @@
 def main():
 
     print(iniciar_programa())
+    
     print(definir_proprietario())
-    listar_produtos()
-    # adicionar_protudos()
+    
+    lista_produtos_padrao = ["abacaxi", "banana", "uva", "melancia", "manga", "amora", "carambola"]
+    
+    listar_produtos(lista_produtos_padrao)
+
+    adicionar_produtos(lista_produtos_padrao)
     # substituir_produtos()
 
 
@@ -29,13 +34,14 @@ def definir_proprietario():
 
     return mensagem 
     
-def listar_produtos():
-    lista_produtos_padrao = ["abacaxi", "banana", "uva", "melancia", "manga", "amora", "carambola"]
+def listar_produtos(lista_produtos_padrao):
 
     print('Abaixo nossa lista de produtos em estoque:\n')
 
     for indice in range(len(lista_produtos_padrao)):
         print(f'{indice} - {lista_produtos_padrao[indice]}')
 
+def adicionar_produtos(lista_produtos_padrao):
+    pass
               
 main()
