@@ -72,9 +72,7 @@
 ![Containerization](/Containers/images/container.jpg)
 
 ### Simple Docker's Architecture (Client-Server) Schema
-![alt text][logo]
-
-[logo]: https://docs.docker.com/get-started/images/docker-architecture.png
+![Docker_Arch][/Containers/images/docker_arch.jpg)
 
 - **Docker's Client** talks to the **Docker's Host** (Docker Daemon) using its **REST API**. After this call, the host build, run and distribute your Docker containers to the **Docker's Registry**.
 
