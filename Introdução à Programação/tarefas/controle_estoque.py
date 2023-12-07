@@ -1,25 +1,58 @@
+import sys
+import time
+
 def main():
 
     print(iniciar_programa())
     
-    print(definir_proprietario())
-    
     lista_produtos_padrao = ["abacaxi", "banana", "uva", "melancia", "manga", "amora", "carambola"]
     
-    listar_produtos(lista_produtos_padrao)
-
-    # apresenta_funcoes()
-
-    print(adicionar_produtos(lista_produtos_padrao))
-    
-    print(substituir_produtos(lista_produtos_padrao))
-
-    print(remover_produtos(lista_produtos_padrao))
-
+    apresenta_funcoes(lista_produtos_padrao)
 
 def iniciar_programa():
-    mensagem = "Este é o controle de estoque V1.\n"
+    mensagem = "Este é o controle de estoque V1."
     return mensagem
+
+def apresenta_funcoes(lista_produtos_padrao):
+
+    lista_funcoes = ["\nO programa tem as seguintes funções: ", "0 - definir_proprietario", "1 - listar_produtos", "2 - adicionar_produtos", "3 - substituir_produtos", "4 - remover_produtos", "5 - definir_lista", "6 - sair"]
+    
+    while True:
+        try:
+            for funcao in lista_funcoes:
+                print(funcao)
+
+            escolha_usuario = int(input("\nDigite em número inteiro a função desejada: "))
+
+            if escolha_usuario > 6:
+                raise ValueError
+            elif escolha_usuario == 0:
+                definir_proprietario()
+                return apresenta_funcoes(lista_produtos_padrao)
+            elif escolha_usuario == 1:
+                listar_produtos(lista_produtos_padrao)
+                return apresenta_funcoes(lista_produtos_padrao)
+            elif escolha_usuario == 2:
+                listar_produtos(lista_produtos_padrao)                
+                adicionar_produtos(lista_produtos_padrao)
+                return apresenta_funcoes(lista_produtos_padrao)
+            elif escolha_usuario == 3:
+                listar_produtos(lista_produtos_padrao)
+                substituir_produtos(lista_produtos_padrao)
+                return apresenta_funcoes(lista_produtos_padrao)
+            elif escolha_usuario == 4:
+                listar_produtos(lista_produtos_padrao)                
+                remover_produtos(lista_produtos_padrao)
+                return apresenta_funcoes(lista_produtos_padrao)
+            elif escolha_usuario == 5:
+                return "definir_lista"
+            elif escolha_usuario == 6:
+                sys.exit("Obrigado por usar o Controle de Estoque V1\n")        
+
+        except ValueError:
+            print("\nVocê digitou algo diferente de um número inteiro. Tente novamente!")
+            continue
+    
 
 def definir_proprietario():
     try:
@@ -36,16 +69,8 @@ def definir_proprietario():
         pass
     
     mensagem = f'\nOlá {proprietário}!'
-
-    return mensagem 
-
-def apresenta_funcoes():
-
-    lista_funcoes = ["definir_proprietario", "listar_produtos", "adicionar_produtos", "substituir_produtos", "remover_produtos"]
-
-    lista = [funcao for funcao in lista_funcoes]
-
-    print(lista)
+    
+    print(mensagem) 
 
 def listar_produtos(lista_produtos_padrao):
 
@@ -65,13 +90,14 @@ def adicionar_produtos(lista_produtos_padrao):
 
     listar_produtos(lista_produtos_padrao)
 
-    mensagem = f'\nA nova lista de produtos em estoque é: {lista_produtos_padrao}\n'
-
-    return mensagem
+    mensagem = f'\nPronto! A nova lista de produtos em estoque é: {lista_produtos_padrao}'
+    print(mensagem)
+    
+    return lista_produtos_padrao
 
 def substituir_produtos(lista_produtos_padrao):
     
-    lista_indice_substituir = input("Digite em número inteiro e separado por espaços qual o item da lista para substituir: ").split(" ")
+    lista_indice_substituir = input("\nDigite em número inteiro e separado por espaços qual o item da lista para substituir: ").split(" ")
 
     lista_para_substituir = []
 
@@ -79,7 +105,6 @@ def substituir_produtos(lista_produtos_padrao):
         for indice in range(len(lista_indice_substituir)):
             	if produto == int(lista_indice_substituir[indice]):
                     lista_para_substituir.append(lista_produtos_padrao[produto])
-                # TODO else:
         
     lista_produtos_substitutos = input(f'\nEsta lista {lista_para_substituir} será substituída por quais produtos? Digite-os separados por espaços: ').split(" ")
     
@@ -90,13 +115,14 @@ def substituir_produtos(lista_produtos_padrao):
     
     listar_produtos(lista_produtos_padrao)
 
-    mensagem = f'\nA nova lista de produtos em estoque é: {lista_produtos_padrao}\n'
-
-    return mensagem
+    mensagem = f'\nPronto! A nova lista de produtos em estoque é: {lista_produtos_padrao}'
+    print(mensagem)
+    
+    return lista_produtos_padrao
 
 def remover_produtos(lista_produtos_padrao):
 
-    lista_indice_remover = input("Digite em número inteiro qual o item da lista para remover: ").split(" ")
+    lista_indice_remover = input("\nDigite em número inteiro qual o item da lista para remover: ").split(" ")
 
     lista_para_remover = []
 
@@ -104,11 +130,11 @@ def remover_produtos(lista_produtos_padrao):
         for indice in range(len(lista_indice_remover)):
                 if produto == int(lista_indice_remover[indice]):
                     lista_para_remover.append(lista_produtos_padrao[produto])
-                # TODO else:
 
     lista_produtos_remover = f'\nEsta lista {lista_para_remover} será removida.'
 
     print(lista_produtos_remover)
+    time.sleep(2)
 
     lista_indice_remover = [int(indice) for indice in lista_indice_remover]
 
@@ -123,8 +149,9 @@ def remover_produtos(lista_produtos_padrao):
     
     listar_produtos(lista_produtos_padrao)
 
-    mensagem = f'\nA nova lista de produtos em estoque é: {lista_produtos_padrao}\n'
-
-    return mensagem
+    mensagem = f'\nPronto! A nova lista de produtos em estoque é: {lista_produtos_padrao}'
+    print(mensagem)
+    
+    return lista_produtos_padrao
 
 main()
