@@ -75,12 +75,12 @@
 # print(resultado_soma)
 
 
-def subtracao(numero_1, numero_2):
-    subtracao = int(numero_1) - int(numero_2)
-    return subtracao
+# def subtracao(numero_1, numero_2):
+#     subtracao = int(numero_1) - int(numero_2)
+#     return subtracao
 
-resultado_subtracao = subtracao(numero_1=10, numero_2=4)
-print(resultado_subtracao)
+# resultado_subtracao = subtracao(numero_1=10, numero_2=4)
+# print(resultado_subtracao)
 
 
 # def divisao(numero_1, numero_2):
@@ -93,3 +93,15 @@ print(resultado_subtracao)
 
 # resultado_divisao = divisao(numero_1=1, numero_2=0)
 # print(resultado_divisao)
+
+
+# indices = [1, 3]
+# lista = ["tomate", "cebola", "maracujá", "cereja", "bolo"]
+
+# nova_lista = []
+# for item in range(len(lista)):
+#     if item not in indices:
+#         nova_lista.append(lista[item])
+
+# lista = nova_lista
+# print(lista)

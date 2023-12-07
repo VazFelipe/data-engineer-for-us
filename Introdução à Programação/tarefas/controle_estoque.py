@@ -41,7 +41,7 @@ def definir_proprietario():
 
 def apresenta_funcoes():
 
-    lista_funcoes = ["definir_proprieatrio", "listar_produtos", "adicionar_produtos", "substituir_produtos", "remover_produtos"]
+    lista_funcoes = ["definir_proprietario", "listar_produtos", "adicionar_produtos", "substituir_produtos", "remover_produtos"]
 
     lista = [funcao for funcao in lista_funcoes]
 
@@ -66,7 +66,6 @@ def adicionar_produtos(lista_produtos_padrao):
     listar_produtos(lista_produtos_padrao)
 
     mensagem = f'\nA nova lista de produtos em estoque é: {lista_produtos_padrao}\n'
-
 
     return mensagem
 
@@ -112,15 +111,14 @@ def remover_produtos(lista_produtos_padrao):
     print(lista_produtos_remover)
 
     lista_indice_remover = [int(indice) for indice in lista_indice_remover]
-    print(lista_indice_remover)
+
     nova_lista_produtos_padrao = []
     for produto in range(len(lista_produtos_padrao)):
         if produto not in lista_indice_remover:
-            nova_lista_produtos_padrao.extend(lista_produtos_padrao[produto])
-            # lista_produtos_padrao = lista_produtos_padrao[produto]
-    
+            nova_lista_produtos_padrao.append(lista_produtos_padrao[produto])
+
     lista_produtos_padrao = nova_lista_produtos_padrao
-    
+
     lista_produtos_padrao.sort()
     
     listar_produtos(lista_produtos_padrao)
