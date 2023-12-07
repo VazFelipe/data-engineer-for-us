@@ -14,6 +14,8 @@ def main():
     
     print(substituir_produtos(lista_produtos_padrao))
 
+    print(remover_produtos(lista_produtos_padrao))
+
 
 def iniciar_programa():
     mensagem = "Este é o controle de estoque V1.\n"
@@ -70,7 +72,7 @@ def adicionar_produtos(lista_produtos_padrao):
 
 def substituir_produtos(lista_produtos_padrao):
     
-    lista_indice_substituir = input("Digite em número inteiro qual o item da lista para substituir: ").split(" ")
+    lista_indice_substituir = input("Digite em número inteiro e separado por espaços qual o item da lista para substituir: ").split(" ")
 
     lista_para_substituir = []
 
@@ -93,5 +95,38 @@ def substituir_produtos(lista_produtos_padrao):
 
     return mensagem
 
+def remover_produtos(lista_produtos_padrao):
+
+    lista_indice_remover = input("Digite em número inteiro qual o item da lista para remover: ").split(" ")
+
+    lista_para_remover = []
+
+    for produto in range(len(lista_produtos_padrao)):
+        for indice in range(len(lista_indice_remover)):
+                if produto == int(lista_indice_remover[indice]):
+                    lista_para_remover.append(lista_produtos_padrao[produto])
+                # TODO else:
+
+    lista_produtos_remover = f'\nEsta lista {lista_para_remover} será removida.'
+
+    print(lista_produtos_remover)
+
+    lista_indice_remover = [int(indice) for indice in lista_indice_remover]
+    print(lista_indice_remover)
+    nova_lista_produtos_padrao = []
+    for produto in range(len(lista_produtos_padrao)):
+        if produto not in lista_indice_remover:
+            nova_lista_produtos_padrao.extend(lista_produtos_padrao[produto])
+            # lista_produtos_padrao = lista_produtos_padrao[produto]
+    
+    lista_produtos_padrao = nova_lista_produtos_padrao
+    
+    lista_produtos_padrao.sort()
+    
+    listar_produtos(lista_produtos_padrao)
+
+    mensagem = f'\nA nova lista de produtos em estoque é: {lista_produtos_padrao}\n'
+
+    return mensagem
 
 main()
