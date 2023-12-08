@@ -56,7 +56,27 @@
 #     else:
 #         vanity_plate
 
-plate = '0A'
+# plate = '0A'
 
-if plate.isnumeric():
-    print(True)
+# if plate.isnumeric():
+#     print(True)
+
+# import inflect
+
+# p = inflect.engine()
+
+# user_list = []
+# try:
+#     while True:
+#         user_input = input("Name: ")
+#         user_list.append(user_input)
+# except EOFError:
+#     message = f'Adieu, adieu, to {p.join(user_list)}'
+#     print(message)
+
+import random
+
+# number = random.randrange(0, 1, 1)
+number = random.randint(1,1)
+
+print(number)

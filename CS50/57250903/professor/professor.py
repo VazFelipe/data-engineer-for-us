@@ -43,12 +43,13 @@ def generate_integer(level):
                         answer = int(input(message))
                         counter_retry += 1
                         try:
-                            if counter_retry == 1:
+                            if answer == sum:
+                                score += 0
+                                break
+                            elif counter_retry == 1:
                                 print("EEE")
                             elif counter_retry == 2:
                                 raise ValueError
-                            elif answer == sum:
-                                score += 0
                         except ValueError:
                             print("EEE")
                             print(message_retry)
@@ -72,12 +73,13 @@ def generate_integer(level):
                         answer = int(input(message))
                         counter_retry += 1
                         try:
-                            if counter_retry == 1:
+                            if answer == sum:
+                                score += 0
+                                break
+                            elif counter_retry == 1:
                                 print("EEE")
                             elif counter_retry == 2:
                                 raise ValueError
-                            elif answer == sum:
-                                score += 0
                         except ValueError:
                             print("EEE")
                             print(message_retry)
@@ -101,12 +103,13 @@ def generate_integer(level):
                         answer = int(input(message))
                         counter_retry += 1
                         try:
-                            if counter_retry == 1:
+                            if answer == sum:
+                                score += 0
+                                break
+                            elif counter_retry == 1:
                                 print("EEE")
                             elif counter_retry == 2:
                                 raise ValueError
-                            elif answer == sum:
-                                score += 0
                         except ValueError:
                             print("EEE")
                             print(message_retry)
