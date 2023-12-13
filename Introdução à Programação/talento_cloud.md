@@ -4,6 +4,7 @@
   - [Raciocínio lógico](#raciocínio-lógico)
   - [Lógica imperativa](#lógica-imperativa)
   - [Introdução à Programação](#introdução-à-programação)
+  - [HTML](#html)
 
 ## Raciocínio lógico
 
@@ -114,3 +115,40 @@
 [Voltar ao repositório principal](/README.md)
 
 [Voltar ao índice](#o-conteúdo-deste-documento)
+
+## HTML
+
+- Para construção de um site é necessário ter a estrutura de base HTML:
+  - tags: estruturas de linguagem de marcação que informam a estrutura do site ao navegador
+    - sinal de início <html> e fim </html>
+    - sinal de início <input/>
+    - atributos: 
+      - class: faz com que a CSS e a linguagem Javascript selecionem e acessem elementos específicos do código HTML
+      - id: identifica o elemento quanto utilizar scripts ou estilizar com CSS
+      - href: referencia um url externo, arquivo ou link
+      - src: atribui um url para um conteúdo, imagem ou arquivo
+      - type: tipo do elemento
+      - value: valor padrão do elemento
+    - principais tipos de tags:
+      - doctype: responsável pela versão HTML que a página está usando
+      - HTML: raiz da estrutura
+      - block-level: ocupa todo o espaço do elemento pai
+      - inline: ocupa o espaço do seu conteúdo 
+        - a, b, br, q, strong
+      - multimídia: img, iframe, picture, source
+      - tabelas: table, tbody, td, tr, th, col, caption, tfoot, thead, col, colgroup
+      - formulários: form, input, label, button, fieldset, legend, option, textarea, select, datalist, optiongroup, progress, meter, output
+      - scripts: canvas, noscript, script
+      - metadados: head, link, meta, style, title
+        - ajuda o navegador a renderizar a página
+          - link: importação de folhas de estilo
+          - title: título da página
+          - head: metadados
+          - meta: informações de metadados
+          - style: códigos de estilo
+      - separação de conteúdo: address, article, aside, footer, header, main, nav, section, h1 ... h6
+      - texto: blockquote, p, hr, div, ol, ul, li, pre
+  - formação de elementos
+  - DOM 
+
+![Exemplo de uso de tags](imagens/uso_tags.png)
