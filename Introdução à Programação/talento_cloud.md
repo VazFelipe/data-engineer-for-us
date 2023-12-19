@@ -5,6 +5,7 @@
   - [Lógica imperativa](#lógica-imperativa)
   - [Introdução à Programação](#introdução-à-programação)
   - [HTML](#html)
+    - [Layout do site](#layout-do-site)
 
 ## Raciocínio lógico
 
@@ -151,4 +152,26 @@
   - formação de elementos
   - DOM 
 
+**Exemplo de uso**   
 ![Exemplo de uso de tags](imagens/uso_tags.png)
+
+**Exemplo de estrutura HTML**
+![Tags necessárias](imagens/tags_necessarias.png)
+
+### Layout do site
+
+- Briefing
+- Objetivo do site: qual a mensagem
+- Personalidade da marca
+- Disposição do conteúdo
+  - Equilíbrio de cores
+  - Imagens
+  - Fontes
+  - Padrão visual
+  - Diagramação: construir, estruturar e distribuir informações que compõe a mensagem visual
+  - Figma
+- Público-alvo
+- Experiência do usuário
+- Responsividade mobile
+- Benchmarking
+- Personas: usuários hipotéticos que representam o público-alvo
