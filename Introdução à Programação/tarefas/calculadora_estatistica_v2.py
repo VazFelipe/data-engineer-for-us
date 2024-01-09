@@ -24,6 +24,5 @@ for i in range(0, len(numeros)):
         if numeros[i] >= numeros[j]:
             numeros[i], numeros[j] = numeros[j],numeros[i]
 
-
 print(quantidade, soma, media, minimo, maximo)
 print(numeros)
