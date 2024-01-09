@@ -3,7 +3,6 @@ def operacao():
      if (operacao == 1):
         return operacao    
 
-
 def soma_pares(operacao):
     
     operacao = operacao()
@@ -17,6 +16,5 @@ def soma_pares(operacao):
         print(soma)
     else:
         print('esta operação ainda não foi criada')
-
 
 soma_pares(operacao)
