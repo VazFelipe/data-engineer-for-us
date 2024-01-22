@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(166, 167, 168);
+}
+
+h1 {
+    color: black;
+}
+
+div {
+    color: aquamarine;
+    background-color: darkred;
+    width: 500px;
+}
+
+p {
+    background-color: darkred;
+    width: 500px;
+}
+
+.caixa-meio {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+
+    margin-top: 80px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+    border: 20px solid black;
+}

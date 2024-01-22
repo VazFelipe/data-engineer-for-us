@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(216, 78, 174);
+}
+
+h1 {
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex; /* or inline-flex */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: auto;
+    width: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chartreuse;
+}
