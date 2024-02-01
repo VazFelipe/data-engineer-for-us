@@ -1,0 +1,82 @@
+header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5C3E91;
+  }
+
+ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+nav ul li {
+    padding-left: 16px;
+    list-style-type: none;
+}
+
+main {
+    background-color: #5C3E91;
+    color: white;
+    padding-top: 10px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+section div {
+    background-image: url("./img/bg_laranja.jpg");
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+h1 { 
+    padding-left: 80px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+h2 {
+    padding-left: 80px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+h3 {
+    justify-content: center;
+}
+
+p {
+    justify-content: center;
+} 
+
+.card {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    animation: alternate;
+    transform: scale(1.1);
+}
