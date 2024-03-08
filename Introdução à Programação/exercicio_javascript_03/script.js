@@ -1,4 +1,4 @@
-let h1= document.getElementById('titulo');
+let h1 = document.getElementById('titulo');
 
 let listaNaoOrdenada = document.getElementById('lista-naoordenada')
 let mensagem = ["Very", "Nice", "OMG"];
